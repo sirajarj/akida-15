@@ -1,0 +1,28 @@
+{
+  "name": "LoRD-MD",
+  "logo": "https://i.imgur.com/D4CwwgN.jpeg",
+  "description": "WhatsApp Bot",
+  "repository": "https://github.com/Lord-official/LoRD-MD",
+  "keywords": ["bot","whatsapp","whatsapp-bot"],
+  "buildpacks": [
+   {
+      "url": "heroku/nodejs"
+    },
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+    },
+    {
+            "url": "https://github.com/yespark/heroku-imagemagick-buildpack"
+        },
+    {
+      "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git"
+    }
+  ],
+  "env": {
+ "SESSION_ID": {
+    "description": "The session ID you Recieved",
+    "required": true
+    }  
+ 
+}
+}
